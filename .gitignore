@@ -1,0 +1,16 @@
+# Caches
+_cache_*.csv
+
+# Outputs
+*.pdf
+*.png
+*.svg
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
