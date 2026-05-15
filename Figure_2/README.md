@@ -2,6 +2,8 @@
 
 Scripts that generate the 10 panels of Figure 2, characterizing stress-responsive orthogroups across 36 plant species and 9 stress types.
 
+The assembled figure is available as [`Figure 2.pdf`](Figure%202.pdf).
+
 ## Scripts
 
 | Script | Panels | Description |
