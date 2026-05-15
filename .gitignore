@@ -11,6 +11,15 @@ fig2*.svg
 fig4*.pdf
 fig4*.png
 fig4*.svg
+fig6*.pdf
+fig6*.png
+fig6*.svg
+figure5*.pdf
+figure5*.png
+figure5*.svg
+Figure5_v*.pdf
+Figure5_v*.png
+
 # Allow assembled final figures
 !Figure_*/Figure*.pdf
 
