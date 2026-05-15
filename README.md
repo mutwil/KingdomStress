@@ -15,6 +15,7 @@ The Kingdom Stress Atlas is a multi-species stress transcriptomics resource cove
 
 - [Figure 1](Figure_1/) -- Dataset overview: species phylogeny coupled with stress experiment coverage heatmap, and pipeline validation via canonical stress marker orthologs
 - [Figure 2](Figure_2/) -- Gene family analysis: conservation, functional composition, phylostratigraphic analysis, and stress overlap
+- [Figure 3](Figure_3/) -- Overlap-coefficient analysis: cross-clade conservation, phylogenetic decay of OC vs divergence time, Spearman rho heatmap, and significant stress pairs
 - [Figure 4](Figure_4/) -- MapMan functional bin co-occurrence networks: direction bias, stress specificity, phylogenetic conservation, and hormone-pathway interactions
 - [Figure 6](Figure_6/) -- Cis-regulatory sequence prediction: CNN baseline, PlantCAD2 (DNA LLM), PlantRNA-FM (RNA LLM), late fusion, transcript window scan, attribution-derived motifs, and interpretable feature-based models
 
