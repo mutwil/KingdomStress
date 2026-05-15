@@ -8,6 +8,11 @@ fig1*.svg
 fig2*.pdf
 fig2*.png
 fig2*.svg
+fig4*.pdf
+fig4*.png
+fig4*.svg
+# Allow assembled final figures
+!Figure_*/Figure*.pdf
 
 # Python
 __pycache__/
