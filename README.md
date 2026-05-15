@@ -13,6 +13,7 @@ The Kingdom Stress Atlas is a multi-species stress transcriptomics resource cove
 
 ## Figures
 
+- [Figure 1](Figure_1/) -- Dataset overview: species phylogeny coupled with stress experiment coverage heatmap, and pipeline validation via canonical stress marker orthologs
 - [Figure 2](Figure_2/) -- Gene family analysis: conservation, functional composition, phylostratigraphic analysis, and stress overlap
 
 ## Input data
