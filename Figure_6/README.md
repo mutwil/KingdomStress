@@ -110,6 +110,35 @@ Pre-computed:
 - **Supplementary Dataset 5** (figshare) — trained model weights for CNN, PlantCAD2 (LoRA adapters), and PlantRNA-FM.
 - **Supplementary Dataset 6** (figshare) — `feature_table_all_genes.csv.gz`, 1,687,829 genes × 658 features.
 
+## Revision analyses (Supplementary Figure S11)
+
+Added in response to reviewer comments on MOLECULAR-PLANT-D-26-00539. See
+[Reviewer_response_Figure6.md](Reviewer_response_Figure6.md) for the drafted response,
+Methods additions and the S11 legend. Figure: [Figure S11.pdf](Figure%20S11.pdf).
+
+| # | Script | Panel(s) | Description |
+|---|--------|----------|-------------|
+| 17 | `17_label_audit_and_decomposition.py` | S11 A, B | Assay-depth audit; pooled vs within-species auROC decomposition |
+| 18 | `18_stratified_labels.py` | S11 G | Lineage map, organ harmonisation, organ-restricted label rebuild (validated against published labels) |
+| 19 | `19_stratified_gbm_sweep.py` | S11 C, D, G | Lineage-restricted and prevalence-balanced training with size-matched controls |
+| 20 | `20_label_noise_ceiling.py` | S11 E | Label-noise ceiling from bioproject split-half reliability |
+| 21 | `21_tf_binding_enrichment.py` | S11 F | Stress-responsive gene enrichment among ChIP-seq-bound promoters, with accessibility control |
+| 21b | `21b_motif_vs_jaspar.py` | (text) | Discovered PWMs vs JASPAR2024 plants, within-column-shuffle null |
+| 22 | `22_figureS11.py` | S11 all | Assemble Figure S11 from saved CSVs |
+
+### Key results
+
+- Lineage-restricted training: **+0.023 auROC** vs size-matched control (n=30, paired Wilcoxon P=1.9e-9).
+- Organ-restricted labels: no consistent gain (Leaf +0.003), except Pathogen (+0.022).
+- Label prevalence tracks assay depth (Spearman rho=0.771), inflating pooled auROC by ~0.02; within-species fused auROC = 0.735.
+- Label-noise ceiling = 0.833, so the models reach **71%** of attainable discrimination above chance.
+- Experimental ChIP-seq: stress-responsive genes strongly enriched among bound promoters (NAC102 OR 6.9, ABF1 3.8); stress TFs log2OR 1.24 vs developmental TFs 0.49.
+
+### External data
+
+- JASPAR2024 CORE plants non-redundant PFMs (805 motifs).
+- PlantRegMap section 2.5 experimental ChIP-seq TFBS BEDs for *Arabidopsis thaliana* (67 files, 34 TFs). The motif-derived `TFBS_from_motif_*` files were deliberately not used, to avoid validating motifs against motif predictions.
+
 ## Citation
 
 If you use these scripts, please cite the Kingdom Stress Atlas paper (in preparation).
